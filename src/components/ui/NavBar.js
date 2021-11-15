@@ -30,7 +30,16 @@ export const NavBar = () => {
                         exact
                         to="/dc"
                     >
-                        DC
+                        DCs
+                    </NavLink>
+
+                    <NavLink 
+                        activeClassName="active"
+                        className="nav-item nav-link" 
+                        exact
+                        to="/search"
+                    >
+                        Searh Hero
                     </NavLink>
                 </div>
             </div>

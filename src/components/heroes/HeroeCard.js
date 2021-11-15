@@ -31,7 +31,7 @@ export const HeroeCard = ({
                             </small>
                         </p>
 
-                        <Link to={`./heroe/${id}`}>
+                        <Link to={`/heroe/${id}`}>
                             Mas...
                         </Link>
                         

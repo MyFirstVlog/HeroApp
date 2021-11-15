@@ -12,6 +12,7 @@ import {
 import { DCScreen } from '../components/dc/DCScreen';
 import { HeroesScreen } from '../components/heroes/HeroesScreen';
 import { MarvelScreen } from '../components/marvel/MarvelScreen';
+import { SearchScreen } from '../components/search/SearchScreen';
 import {NavBar} from '../components/ui/NavBar'
 export const DashBoardRoutes = () => {
     return (
@@ -19,8 +20,9 @@ export const DashBoardRoutes = () => {
             <NavBar/>
                 <Routes>
                     <Route path='/marvel' element={<MarvelScreen/>} />
-                    <Route path='/marvel/:heroeID' element={<HeroesScreen/>} />
+                    <Route path='/heroe/:heroeID' element={<HeroesScreen/>} />
                     <Route path='/dc' element={<DCScreen/>} />
+                    <Route path='/search' element={<SearchScreen/>} />
                     <Route path='*' element={<MarvelScreen/>}/>
                 </Routes>
         </>
