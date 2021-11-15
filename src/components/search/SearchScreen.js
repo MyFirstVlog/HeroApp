@@ -1,7 +1,6 @@
 import React, { useMemo } from 'react'
 import queryString from 'query-string'
 import { useLocation, useNavigate } from 'react-router'
-import { heroes } from '../../data/heroes'
 import { useForm } from '../../hooks/useForm'
 import { HeroeCard } from '../heroes/HeroeCard'
 import { getHeroesByName } from '../selectors/getHeroesByName'
@@ -10,8 +9,6 @@ export const SearchScreen = () => {
     let history = useNavigate() 
 
     const {search} = useLocation()
-
-    //const query = search.split('=')[1]
 
     const {q = ''} = queryString.parse(search)
     
