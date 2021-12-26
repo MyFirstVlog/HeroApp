@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useMemo } from 'react'
 import { useParams, Navigate, useNavigate } from 'react-router-dom'
 import { getHeroById } from '../../selectors/getHeroesById';
 
@@ -6,7 +6,8 @@ export const HeroScreen = () => {
 
     const {heroeId} = useParams();
     
-    const hero = getHeroById(heroeId);
+    const hero = useMemo(()=> getHeroById(heroeId), [heroeId]) //? [heroeID] dependencia
+    //? Funcion se esta renderizando cada vez que me devuelvo '/', se usa useMemo, memorizo el valor,objetos o componentes solo si una dependencia cambia ejecuto la funcion
 
     const navigate = useNavigate();
 
@@ -31,14 +32,14 @@ export const HeroScreen = () => {
 
     return (
         <div className="row mt-5">
-          <div className="col-4">s
+          <div className="col-4 animate__animated animate__backInLeft">
             <img 
                 src={imagePath} 
                 alt={superhero}
                 className='img-thumbnail'
             />
           </div>
-          <div className='col-8'>
+          <div className='col-8 animate__animated animate__backInDown'>
             <h3>{superhero}</h3>
             <ul
                 className='list-group'

@@ -25,3 +25,16 @@ Functional component que realiza un enrutamiento
 *** navigate vaya a la paghina anterior
 
 navigate(-1)
+
+*** useMemo
+
+se usa useMemo, memorizo el valor solo si una dependencia cambia ejecuto la funcion
+
+*** useLocation
+
+Nos sirve para determinar la localización en la que estamos
+
+*** query string
+
+paquete para usar mas facil el hook de location 
+
