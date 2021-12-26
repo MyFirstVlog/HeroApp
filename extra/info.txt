@@ -12,3 +12,16 @@ navigate('/marvel',{
         });
 
 Hace que no se devuelva a la ruta anterior 
+
+
+*** useParams
+
+Hook para recibir params
+
+*** <Navigate />
+
+Functional component que realiza un enrutamiento 
+
+*** navigate vaya a la paghina anterior
+
+navigate(-1)
