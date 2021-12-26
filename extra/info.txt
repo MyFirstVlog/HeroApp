@@ -1,0 +1,14 @@
+
+d-flex justify-content-end = it helps you to locate the fragment to the end of the row
+
+<Route path="/*"></Route> --> Indica que todas las rutas despues del / se manejan con esta syntax
+
+Browser Router
+
+Solo con rutas hijas
+
+navigate('/marvel',{
+            replace: true
+        });
+
+Hace que no se devuelva a la ruta anterior 
