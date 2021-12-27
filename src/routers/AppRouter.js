@@ -3,12 +3,18 @@ import React from 'react'
 import { LoginScreen } from "../components/login/LoginScreen";
 import { DashBoardRoutes } from "./DashBoardRoutes";
 import { PrivateRoute } from "./PrivateRoute";
+import { PublicRoute } from "./PublicRoute";
 
 export const AppRouter = () => {
     return (
         <BrowserRouter>
             <Routes>                
-                <Route path="/login" element={<LoginScreen />} />
+                <Route path="/login" element = {
+                    <PublicRoute >
+                        <LoginScreen />
+                    </PublicRoute>
+                } >
+                </Route>
 
                 <Route path="/*" element={
                     <PrivateRoute>
@@ -16,7 +22,7 @@ export const AppRouter = () => {
                     </PrivateRoute>
                 }
                 />
-                {/* <Route path="/*" element={<DashBoardRoutes />} /> */}
+
             </Routes>
         </BrowserRouter>
     )
