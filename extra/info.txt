@@ -38,3 +38,12 @@ Nos sirve para determinar la localización en la que estamos
 
 paquete para usar mas facil el hook de location 
 
+*** testing 
+
+When you are testing parent components you use shallow but when you need to go deeper the solution is mount
+Also when you have a fragment and inside of it, there are different components the best solutions is still the mount
+
+*** Memory Router 
+
+Used to provide the useNavigation() hook to the testing
+

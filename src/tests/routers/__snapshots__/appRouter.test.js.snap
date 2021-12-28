@@ -1,6 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Testing DashBoardRoutes  should show correctly 1`] = `
+exports[`Testing AppRouter should show login when user is not logged 1`] = `
+<div
+  className="container mt-5"
+>
+  <h1>
+    login
+  </h1>
+  <hr />
+  <button
+    className="\\"btn btn-primary"
+    onClick={[Function]}
+  >
+    Login
+  </button>
+</div>
+`;
+
+exports[`Testing AppRouter should show marvel component if user is logged 1`] = `
 Array [
   <nav
     className="navbar navbar-expand-sm navbar-dark bg-dark"
@@ -19,7 +36,8 @@ Array [
         className="navbar-nav"
       >
         <a
-          className="nav-item nav-link"
+          aria-current="page"
+          className="nav-item nav-link active"
           href="/marvel"
           onClick={[Function]}
         >
@@ -50,7 +68,7 @@ Array [
         <span
           className="nav-item nav-link text-info"
         >
-          Alejandro
+          Alejo
         </span>
         <button
           className="nav-item nav-link btn"
