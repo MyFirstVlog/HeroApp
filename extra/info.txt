@@ -47,3 +47,6 @@ Also when you have a fragment and inside of it, there are different components t
 
 Used to provide the useNavigation() hook to the testing
 
+*** clear cache
+
+npm cache clean --force  
