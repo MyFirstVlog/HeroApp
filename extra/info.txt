@@ -50,3 +50,11 @@ Used to provide the useNavigation() hook to the testing
 *** clear cache
 
 npm cache clean --force  
+
+*** Mistake useNavigate() may be used only in the context of a <Router> component.
+
+sln/= use <MemoryRouter />
+
+***  An update to MemoryRouter inside a test was not wrapped in act(...).
+
+sln/= crear mock de navigate mirar Navbar.test.js
