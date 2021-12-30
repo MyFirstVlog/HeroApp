@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-
+const heroImages  = require.context('../../assets/heroes', true);
 export const HeroCard = ({
     id,
     superhero,
@@ -8,7 +8,7 @@ export const HeroCard = ({
     first_appearance,
     characters }) => {
     
-    const imagePath = `/assets/heroes/${id}.jpg`
+    const imagePath = heroImages(`./${id}.jpg`).default
 
     return (
         <div className='col'>

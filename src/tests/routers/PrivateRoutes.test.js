@@ -1,7 +1,7 @@
 import { mount } from "enzyme";
 import { MemoryRouter } from "react-router-dom";
-import { AuthContext } from "../auth/authContext";
-import { PrivateRoute } from "../routers/PrivateRoute";
+import { AuthContext } from "../../auth/authContext";
+import { PrivateRoute } from "../../routers/PrivateRoute";
 
 
 //?Componente no es mas que una funcion que devuelve un jsx
